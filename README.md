@@ -1,57 +1,40 @@
 # ember-tpk-component
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This Blueprint helps you structure your translation files in the same way as your component tree.  
+Small file, reusable and structured.  
 
-## Prerequisites
+## Documentation
 
-You will need the following things properly installed on your computer.
+The tpk-component has as argument by default the structure "POD" and the language of the translation file and by default to "fr"  
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://cli.emberjs.com/release/)
-* [Google Chrome](https://google.com/chrome/)
+To create a component `ember g component foo`  
+  ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-## Installation
+This will create in addition to the template and integration test a file "fr-fr.yaml"  
 
-* `git clone <repository-url>` this repository
-* `cd ember-tpk-component`
-* `npm install`
 
-## Running / Development
+## Translation Blueprint
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+If you need to create a translation file alone, the blueprint translation is there for that!  
+Ditto "POD" and "fr" are its default arguments  
+**The pod argument is required for translations, it won't work without**
 
-### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
+Yaml file name is dynamic, you can pass in options another language  
 
-### Running Tests
+`ember g component foo --language us`
 
-* `ember test`
-* `ember test --server`
+Will give you as file "us-us.yaml"  
+## Tpk-component Blueprint
 
-### Linting
+This tpk-component functions exactly like the original blueprint component. **No more need to specify "--pod".**  
+Need more information about options ?  
+`ember g component --help`
 
-* `npm run lint`
-* `npm run lint:fix`
 
-### Building
+Deleting a component will also delete its translation file.  
+`ember d component foo`
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)  
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://cli.emberjs.com/release/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-# ember-tpk-component
+## Intl
