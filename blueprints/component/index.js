@@ -148,6 +148,12 @@ module.exports = {
   },
 
   uninstall(options) {
+    this.ui.writeLine(
+      `  ${chalk.blue(
+        '-----------------------TPK-COMPONENT-----------------------'
+      )}`
+    );
+
     // Force the `componentClass` option to be non-empty. It doesn't really
     // matter what it is set to. All we want is to delete the optional JS
     // file if the user had created one (when using this generator, created
@@ -161,6 +167,11 @@ module.exports = {
 
   beforeInstall(options, locals) {
     this.savedLocals = locals;
+    this.ui.writeLine(
+      `  ${chalk.blue(
+        '-----------------------TPK-COMPONENT-----------------------'
+      )}`
+    );
   },
 
   afterInstall(options) {
@@ -185,7 +196,6 @@ module.exports = {
     let commandOptions = this.options;
 
     if (commandOptions.pod) {
-      console.log(options.dasherizedModuleName);
       return {
         __path__() {
           return path.join(
