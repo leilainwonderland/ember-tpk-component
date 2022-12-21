@@ -1,14 +1,24 @@
+
 # ember-tpk-component
 
 This Blueprint helps you structure your translation files in the same way as your component tree.  
 Small file, reusable and structured.  
 
+## Installation
+
+Not yet documented
+
+```bash
+  Not yet documented
+```
+    
 ## Documentation
 
 The tpk-component has as argument by default the structure "POD" and the language of the translation file and by default to "fr"  
 
 To create a component `ember g component foo`  
-  ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+  ![tpk-component-g  ](https://user-images.githubusercontent.com/99978590/208912877-4afe1bb1-8fcf-4470-ad39-0120ffc7fe77.png)
+
 
 This will create in addition to the template and integration test a file "fr-fr.yaml"  
 
@@ -33,8 +43,13 @@ Need more information about options ?
 
 
 Deleting a component will also delete its translation file.  
-`ember d component foo`
+`ember d component foo`  
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)  
+## Intl  
+In **ember-intl.js**
+`wrapTranslationsWithNamespace` must be true for ember-intl to work properly.  
 
-## Intl
+`wrapTranslationsWithNamespace: true`
+
+See documentation:
+https://ember-intl.github.io/ember-intl/docs/guide/addon-configs
