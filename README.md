@@ -17,6 +17,7 @@ Not yet documented
 The tpk-component has as argument by default the structure "POD" and the language of the translation file and by default to "fr"  
 
 To create a component `ember g component foo`  
+
   ![tpk-component-g  ](https://user-images.githubusercontent.com/99978590/208912877-4afe1bb1-8fcf-4470-ad39-0120ffc7fe77.png)
 
 
