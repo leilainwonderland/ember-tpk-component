@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  description: 'help to create the structure of translation files',
+  description: 'help to create the structure of translations files',
 
   availableOptions: [
     {

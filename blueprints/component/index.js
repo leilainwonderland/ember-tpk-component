@@ -15,7 +15,7 @@ const Blueprint = require('ember-cli/lib/models/blueprint');
 
 const OCTANE = has('octane');
 
-const translationBlueprint = Blueprint.lookup('translation', {
+const translationsBlueprint = Blueprint.lookup('translations', {
   paths: [path.resolve(__dirname, '..')],
 });
 
@@ -160,8 +160,8 @@ module.exports = {
     // manually, added later with component-class generator...).
     options.componentClass = '@ember/component';
 
-    // translation blueprint
-    translationBlueprint.uninstall(options);
+    // translations blueprint
+    translationsBlueprint.uninstall(options);
     return this._super.uninstall.apply(this, arguments);
   },
 
@@ -188,8 +188,8 @@ module.exports = {
     }
     this._super.afterInstall.apply(this, arguments);
 
-    // translation blueprint
-    return translationBlueprint.install(options);
+    // translations blueprint
+    return translationsBlueprint.install(options);
   },
 
   fileMapTokens(options) {
