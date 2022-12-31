@@ -1,13 +1,15 @@
 {
   "name": "ember-tpk-component",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "description": "Small description for ember-tpk-component goes here",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leilainwonderland/ember-tpk-component.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "Leila Nunez",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -74,5 +76,17 @@
     "ember-cli-string-utils": "^1.1.0",
     "silent-error": "^1.1.1",
     "ember-cli-typescript-blueprint-polyfill": "^0.1.0"
-  }
+  },
+  "main": ".eslintrc.js",
+  "keywords": [
+    "ember-addon",
+    "translation",
+    "component",
+    "blueprint",
+    "pod"
+  ],
+  "bugs": {
+    "url": "https://github.com/leilainwonderland/ember-tpk-component/issues"
+  },
+  "homepage": "https://github.com/leilainwonderland/ember-tpk-component#readme"
 }
